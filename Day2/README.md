@@ -110,4 +110,4 @@ Screenshots of the SQL query outputs are included in this repository to demonstr
 
 ## 📌 Assignment
 
-**Epochs: Data Science Bootcamp '26' – Day 02**
+**Epochs: Data Science Bootcamp '26' – Day 02** 
