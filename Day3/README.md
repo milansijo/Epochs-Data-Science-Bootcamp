@@ -4,88 +4,159 @@
 
 This project was completed as part of the **Epochs: Data Science Bootcamp '26 - Day 03 Assignment**.
 
-The objective of this project is to perform Exploratory Data Analysis (EDA), clean the dataset, engineer meaningful features, and prepare the data for future Machine Learning models.
+The objective of this project is to explore and prepare a real-world used car dataset through **Exploratory Data Analysis (EDA), Data Cleaning, and Feature Engineering**. The resulting cleaned dataset can later be used to build Machine Learning models for used car price prediction.
 
 ---
 
-# 📂 Dataset
+## 📂 Dataset
 
 **Dataset:** Used Car Price Prediction Dataset
 
-**Source:** https://www.kaggle.com/datasets/taeefnajib/used-car-price-prediction-dataset
+**Source:** Kaggle - Used Car Price Prediction Dataset
+
+The dataset contains information about used vehicles, including:
+
+- Brand
+- Model
+- Model Year
+- Mileage
+- Fuel Type
+- Engine
+- Transmission
+- Exterior Colour
+- Interior Colour
+- Accident History
+- Clean Title
+- Price
 
 ---
 
-# 🔍 Exploratory Data Analysis (EDA)
+## 🔍 Exploratory Data Analysis
 
-The following analyses were performed:
+Exploratory Data Analysis was performed to understand the structure, quality, and characteristics of the dataset.
 
-- Explored the dataset structure and dimensions.
-- Identified numerical and categorical features.
-- Generated descriptive statistics.
-- Checked for missing values.
-- Checked for duplicate records.
-- Examined unique values in categorical columns.
-- Identified potential outliers using box plots.
+The analysis included:
+
+- Examining the dataset shape and structure
+- Identifying numerical and categorical features
+- Examining data types
+- Generating descriptive statistics
+- Checking for missing values
+- Checking for duplicate records
+- Examining unique values in categorical features
+- Analysing distributions
+- Identifying potential outliers
 
 ---
 
-# 🧹 Data Cleaning
+## ⚠️ Data Quality Issues Identified
 
-The following preprocessing steps were applied:
+During exploration, several data quality issues were identified.
 
-- Missing values in categorical columns (`fuel_type`, `accident`, and `clean_title`) were handled using mode imputation.
+- Missing values were present in `fuel_type`, `accident`, and `clean_title`.
+- Some numerical information such as `price` and `milage` was initially stored as object/string data.
+- Numerical values required cleaning before they could be used for analysis and feature engineering.
+- Potential outliers were identified in numerical features.
+- Duplicate records were checked to avoid repeated observations.
+
+---
+
+## 🧹 Data Cleaning
+
+The following techniques were applied to prepare the dataset:
+
+- Missing categorical values were handled using appropriate imputation.
 - Duplicate records were identified and removed where applicable.
-- Incorrect data types were corrected for numerical columns such as `price` and `milage`.
-- Outliers were analyzed and handled where necessary to improve data quality.
+- Numerical columns stored as strings were cleaned and converted to appropriate numerical data types.
+- Potential outliers were analysed and handled where necessary.
+- The dataset was checked again after cleaning to ensure it was ready for feature engineering.
 
 ---
 
-# ⚙️ Feature Engineering
+## ⚙️ Feature Engineering
 
-Three new features were created to improve the usefulness of the dataset for future Machine Learning models.
+Five new features were created from the existing variables to provide additional information that may be useful for future Machine Learning models.
 
 ### 1. Car Age
 
-Calculates the age of the vehicle from its manufacturing year.
+Represents the approximate age of a vehicle based on its model year.
 
+```text
+Car Age = Current Year - Model Year
 ```
-Car Age = Current Year − Model Year
-```
+
+Car age can provide a more directly useful measure of vehicle depreciation than the model year alone.
 
 ### 2. Price per KM
 
-Measures the selling price relative to the distance driven.
+Represents the vehicle's listed price relative to its total mileage.
 
-```
+```text
 Price per KM = Price / Mileage
 ```
 
+This feature provides an additional way to compare the value of vehicles with different mileage levels.
+
 ### 3. Mileage per Year
 
-Calculates the average distance driven per year.
+Measures the approximate average distance travelled by a vehicle per year.
 
-```
+```text
 Mileage per Year = Mileage / Car Age
 ```
 
+This helps distinguish heavily used vehicles from vehicles of a similar age that have experienced lower annual usage.
+
+### 4. Is Automatic
+
+A binary feature was created from the transmission information to indicate whether a vehicle has an automatic transmission.
+
+```text
+Automatic transmission → 1
+Other transmission → 0
+```
+
+This simplifies transmission information into a feature that can be easily used by future Machine Learning models.
+
+### 5. Price per Year
+
+Represents the vehicle's price relative to its age.
+
+```text
+Price per Year = Price / Car Age
+```
+
+This provides another measure for comparing the value of vehicles across different age groups.
+
 ---
 
-# 💡 Business Insights
+## 💡 Key Business Insights
 
-1. Older vehicles generally have lower resale prices, making **Car Age** an important indicator of vehicle value.
+1. **Vehicle age is an important factor when evaluating used cars.** Converting model year into `Car Age` makes it easier to analyse how vehicle value changes as cars become older.
 
-2. Vehicles with a lower **Price per KM** often represent better value for buyers and may indicate competitive pricing.
+2. **Mileage should be considered together with vehicle age.** The `Mileage per Year` feature provides more context than total mileage alone, since two vehicles with the same mileage may have reached it over very different periods.
 
-3. Cars with high **Mileage per Year** are likely to have experienced heavier annual usage, which may negatively impact resale value.
+3. **Price per KM provides a useful value comparison between vehicles.** It combines price and usage into a single measure that can help identify differences between similarly priced vehicles with different mileage.
 
-4. Most missing values were concentrated in a few categorical columns, while the remaining dataset was largely complete, reducing the amount of required preprocessing.
+4. **Transmission type can be represented more simply for predictive analysis.** The `Is Automatic` feature converts transmission information into a machine-learning-friendly binary variable and allows automatic and non-automatic vehicles to be compared more easily.
 
-5. Feature engineering created more informative variables that capture vehicle usage patterns better than the original features alone, making them valuable for future predictive models.
+5. **Price per Year provides an additional perspective on vehicle value and depreciation.** Comparing price relative to vehicle age can help distinguish newer high-value vehicles from older vehicles and may provide useful information for future price prediction models.
 
 ---
 
-# 🛠 Technologies Used
+## 📊 Final Dataset
+
+After completing data cleaning and feature engineering, the processed dataset was saved as:
+
+```text
+cleaned_used_cars.csv
+```
+
+The cleaned dataset contains the original relevant attributes along with the five engineered features and is prepared for future Machine Learning model development.
+
+---
+
+## 🛠 Technologies Used
 
 - Python 3
 - Pandas
@@ -95,9 +166,10 @@ Mileage per Year = Mileage / Car Age
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
-```
+```text
+Day3/
 ├── task-3.ipynb
 ├── cleaned_used_cars.csv
 └── README.md
@@ -105,7 +177,7 @@ Mileage per Year = Mileage / Car Age
 
 ---
 
-# 🚀 How to Run
+## 🚀 How to Run
 
 1. Clone the repository.
 
@@ -114,26 +186,21 @@ git clone <repository-url>
 cd <repository-name>
 ```
 
-2. Install the required libraries.
+2. Install the required Python libraries.
 
 ```bash
-pip install pandas numpy matplotlib kagglehub
+pip install pandas numpy matplotlib
 ```
 
-3. Download the dataset using KaggleHub or place the dataset in the project directory.
+3. Open `task-3.ipynb` using Google Colab or Jupyter Notebook.
 
-4. Open `task-3.ipynb` in Google Colab or Jupyter Notebook.
+4. Run all notebook cells to reproduce the EDA, data cleaning, and feature engineering process.
 
-5. Run all cells to reproduce the EDA, data cleaning, feature engineering, and generate the cleaned dataset.
+5. The final processed dataset is exported as `cleaned_used_cars.csv`.
 
 ---
 
-# 📌 Assignment
+## 📌 Assignment
 
-**Epochs: Data Science Bootcamp '26' – Day 03**
+**Epochs: Data Science Bootcamp '26 - Day 03**
 
-**Tag:**
-
-```
-#evn-ds-epochs26-day03
-```
