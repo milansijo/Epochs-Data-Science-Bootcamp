@@ -3,12 +3,12 @@ from prompts import PROMPTS
 from utils import generate_response
 
 st.set_page_config(
-    page_title="StudyGenie AI",
+    page_title="StudyBuddy AI",
     page_icon="🎓",
     layout="wide"
 )
 
-st.title("🎓 StudyGenie AI")
+st.title("🎓 StudyBuddy AI")
 st.markdown("### Your Personal AI Study Assistant")
 
 st.sidebar.title("📚 Features")
