@@ -1,9 +1,11 @@
-# Customer Segmentation using K-Means Clustering and PCA
+# 🧩 Customer Segmentation using K-Means Clustering and PCA
 
-**Participant Name:** Milan Sijo  
+**Name:** Milan Sijo  
 **MUID:** milansijo@mulearn
 
-## Business Objective
+---
+
+## 📖 Project Overview
 
 The objective of this project is to segment mall customers into meaningful groups based on their demographic and spending characteristics.
 
@@ -11,7 +13,7 @@ Using unsupervised machine learning, customers with similar behavior are grouped
 
 ---
 
-## Dataset Overview
+## 📂 Dataset Overview
 
 **Dataset:** Mall Customer Segmentation Dataset  
 **Source:** Kaggle
@@ -28,7 +30,7 @@ The dataset was analyzed and prepared before applying clustering techniques.
 
 ---
 
-## Features Used
+## 🎯 Features Used
 
 The following features were used for customer segmentation:
 
@@ -41,7 +43,7 @@ The following features were used for customer segmentation:
 
 ---
 
-## Preprocessing Pipeline
+## 🛠️ Preprocessing Pipeline
 
 The following preprocessing steps were performed:
 
@@ -68,7 +70,7 @@ Scaling was necessary because K-Means uses distance to group customers, and the 
 
 ---
 
-## Elbow Method
+## 📊 Elbow Method
 
 The Elbow Method was used to determine an appropriate number of clusters.
 
@@ -78,7 +80,7 @@ Based on the elbow curve, **4 clusters** were selected for customer segmentation
 
 ---
 
-## K-Means Clustering
+## 🤖 K-Means Clustering
 
 K-Means clustering was applied to the scaled dataset using:
 
@@ -90,7 +92,7 @@ Each customer was assigned to one of four clusters based on similarities in thei
 
 ---
 
-## Cluster Profiling
+## 📈 Cluster Profiling
 
 The four customer segments obtained were:
 
@@ -103,7 +105,7 @@ The four customer segments obtained were:
 
 ---
 
-## Customer Segment Interpretation
+## 💡 Customer Segment Interpretation
 
 ### Cluster 0 – Mature Female Low Spenders
 
@@ -147,7 +149,7 @@ This cluster represents mature male customers with moderate-to-high income but c
 
 ---
 
-## PCA Analysis
+## 🔬 PCA Analysis
 
 Principal Component Analysis (PCA) was used to reduce the scaled feature space into two dimensions for visualization.
 
@@ -167,7 +169,7 @@ PCA was used only for dimensionality reduction and visualization. The K-Means cl
 
 ---
 
-## Key Observations
+## 🔍 Key Observations
 
 1. Four customer segments were identified using K-Means clustering.
 
@@ -185,7 +187,7 @@ PCA was used only for dimensionality reduction and visualization. The K-Means cl
 
 ---
 
-## Business Recommendations
+## 💼 Business Recommendations
 
 ### Cluster 0 – Mature Female Low Spenders
 
@@ -205,7 +207,7 @@ Use value-focused promotions, targeted discounts, and relevant product recommend
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 The customer segmentation analysis can be improved by:
 
@@ -219,7 +221,9 @@ The customer segmentation analysis can be improved by:
 
 ---
 
-## Technologies Used
+## 🛠️ Tech Stack
+
+### Libraries
 
 - Python
 - Pandas
@@ -241,10 +245,10 @@ The customer segmentation analysis can be improved by:
 
 ---
 
-## Repository Structure
+## 📂 Project Structure
 
 ```text
-Day7/
+Day07/
 │
 ├── customer_segmentation.ipynb
 └── README.md
@@ -276,7 +280,37 @@ Business Interpretation
 
 ---
 
-## Conclusion
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
+```
+
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day07
+```
+
+Install the required libraries:
+
+```bash
+pip install pandas numpy matplotlib scikit-learn
+```
+
+---
+
+## ▶️ Run Locally
+
+1. Open `customer_segmentation.ipynb` in Google Colab or Jupyter Notebook.
+
+2. Run all notebook cells to reproduce the preprocessing, clustering, PCA, and visualization.
+
+---
+
+## 📌 Conclusion
 
 K-Means clustering successfully divided the mall customers into **four distinct segments** based on customer characteristics.
 
@@ -288,10 +322,26 @@ These customer segments can help businesses create more targeted marketing and e
 
 ---
 
-## Assignment Details
+## 🎯 Learning Outcomes
 
-**Epochs '26 – Assignment 7**  
-**Topic:** Unsupervised Learning – Customer Segmentation
+This project demonstrates:
 
-**Participant Name:** Milan Sijo  
+- Unsupervised Machine Learning (Clustering)
+- K-Means Clustering Algorithm
+- Principal Component Analysis (PCA)
+- Customer Segmentation
+- Business Interpretation of Clusters
+
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
 **MUID:** milansijo@mulearn
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 07 Assignment** for educational purposes.
