@@ -1,6 +1,11 @@
 # 📊 Google Play Store Apps - Dataset Exploration & Problem Framing
 
-## 📖 Overview
+**Name:** Milan Sijo  
+**MUID:** milansijo@mulearn
+
+---
+
+## 📖 Project Overview
 
 This project is submitted as part of the **Epochs:Data Science Bootcamp '26 - Day 01 Assignment**. The objective is to explore a real-world dataset, identify a business problem, and determine the most appropriate Machine Learning approach.
 
@@ -86,7 +91,9 @@ The dataset was downloaded directly from Kaggle within the notebook using the **
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Tech Stack
+
+### Libraries
 
 * Python 3
 * Pandas
@@ -96,33 +103,43 @@ The dataset was downloaded directly from Kaggle within the notebook using the **
 
 ---
 
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```text
+Day01/
 ├── analysis.ipynb
-├── README.md
+└── README.md
 ```
 
 ---
 
-## 🚀 How to Run
+## ⚙️ Installation
 
-1. Clone this repository.
+Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
 ```
 
-2. Install the required libraries.
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day01
+```
+
+Install the required libraries:
 
 ```bash
 pip install pandas numpy kagglehub
 ```
 
-3. Ensure your Kaggle API credentials are configured.
+---
 
-4. Open **analysis.ipynb** and run all cells. The notebook automatically downloads the latest version of the dataset using:
+## ▶️ Run Locally
+
+Ensure your Kaggle API credentials are configured.
+
+Open **analysis.ipynb** and run all cells. The notebook automatically downloads the latest version of the dataset using:
 
 ```python
 import kagglehub
@@ -134,12 +151,26 @@ No manual dataset download or CSV placement is required.
 
 ---
 
-## 📌 Assignment
+## 🎯 Learning Outcomes
 
-**EVN DS Epochs '26' – Day 01**
+This project demonstrates:
 
-**Tag:**
+- Real-World Dataset Exploration
+- Business Problem Identification
+- Machine Learning Problem Framing
+- Exploratory Data Analysis using Pandas
+- Automated Dataset Downloading using KaggleHub
 
-```text
-#evn-ds-epochs26-day01
-```
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
+**MUID:** milansijo@mulearn
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 01 Assignment** for educational purposes.
