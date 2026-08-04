@@ -1,11 +1,11 @@
-# Customer Churn Prediction Web Application
+# 🌐 Customer Churn Prediction Web Application
 
 **Name:** Milan Sijo  
 **MUID:** milansijo@mulearn
 
 ---
 
-# Project Overview
+## 📖 Project Overview
 
 This project deploys a **Machine Learning Customer Churn Prediction Model** as an interactive web application using **Streamlit**.
 
@@ -15,7 +15,7 @@ The project demonstrates the complete deployment workflow from model training to
 
 ---
 
-# Problem Statement
+## 🎯 Problem Statement
 
 Customer churn is one of the biggest challenges faced by subscription-based businesses. Predicting potential churners allows companies to take preventive actions through personalized offers, improved customer support, and targeted retention strategies.
 
@@ -23,7 +23,7 @@ The objective of this project is to deploy a trained customer churn prediction m
 
 ---
 
-# Dataset
+## 📂 Dataset
 
 **Dataset:** Customer Churn Dataset
 
@@ -45,7 +45,7 @@ The dataset contains customer-related information including:
 
 ---
 
-# Machine Learning Model
+## 🤖 Machine Learning Model
 
 The deployed application uses a **Logistic Regression** model trained using Scikit-learn.
 
@@ -64,7 +64,17 @@ models/model.pkl
 
 ---
 
-# Technologies Used
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Streamlit
+
+### Backend
+
+- Python
+
+### Libraries
 
 - Python
 - Pandas
@@ -76,7 +86,7 @@ models/model.pkl
 
 ---
 
-# Deployment Approach
+## 🚀 Deployment Approach
 
 The deployment process involved the following steps:
 
@@ -90,7 +100,7 @@ The deployment process involved the following steps:
 
 ---
 
-# Application Features
+## ✨ Application Features
 
 The web application allows users to:
 
@@ -101,7 +111,7 @@ The web application allows users to:
 
 ---
 
-# Input Features
+## 📋 Input Features
 
 The application accepts the following customer details:
 
@@ -118,7 +128,7 @@ The application accepts the following customer details:
 
 ---
 
-# Output
+## 📤 Output
 
 The application predicts:
 
@@ -129,7 +139,7 @@ It also displays the prediction probability for each class.
 
 ---
 
-# Challenges Faced
+## ⚠️ Challenges Faced
 
 During deployment, several challenges were encountered:
 
@@ -143,7 +153,7 @@ These issues were resolved by using a deployment-friendly preprocessing pipeline
 
 ---
 
-# Observations
+## 🔍 Observations
 
 - The deployed model provides predictions instantly through a simple web interface.
 - Integrating preprocessing into the model pipeline simplifies deployment.
@@ -152,7 +162,7 @@ These issues were resolved by using a deployment-friendly preprocessing pipeline
 
 ---
 
-# Future Improvements
+## 🔮 Future Improvements
 
 The application can be further improved by:
 
@@ -165,10 +175,10 @@ The application can be further improved by:
 
 ---
 
-# Repository Structure
+## 📂 Project Structure
 
 ```text
-Customer-Churn-WebApp/
+Day09/
 │
 ├── app.py
 ├── train_model.py
@@ -180,18 +190,18 @@ Customer-Churn-WebApp/
 
 ---
 
-# How to Run Locally
+## ⚙️ Installation
 
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
 ```
 
-Move into the project directory:
+Navigate to the project:
 
 ```bash
-cd Customer-Churn-WebApp
+cd Epochs-Data-Science-Bootcamp/Day09
 ```
 
 Install the required packages:
@@ -200,7 +210,9 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application:
+---
+
+## ▶️ Run Locally
 
 ```bash
 streamlit run app.py
@@ -208,11 +220,13 @@ streamlit run app.py
 
 ---
 
-# Deployment Link
+## 🚀 Deployment
+
+**Platform:** Render
 
 **Live Application:**
 
-```
+```text
 https://your-render-url.onrender.com
 ```
 
@@ -220,7 +234,7 @@ Replace the above link with your deployed Render URL after deployment.
 
 ---
 
-# Conclusion
+## 📌 Conclusion
 
 This project successfully demonstrates the end-to-end deployment of a Machine Learning model for customer churn prediction.
 
@@ -228,14 +242,26 @@ By combining a trained Logistic Regression model with Streamlit, the application
 
 ---
 
-# Assignment Details
+## 🎯 Learning Outcomes
 
-**Epochs '26 – Assignment 9**
+This project demonstrates:
 
-**Topic:** Machine Learning Model Deployment
+- Machine Learning Model Deployment
+- Streamlit Web Application Development
+- End-to-End ML Pipeline
+- Model Serialization with Joblib
+- Cloud Deployment using Render
 
-**Name:** Milan Sijo
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
 
 **MUID:** milansijo@mulearn
 
-**Deployment Platform:** Render
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 09 Assignment** for educational purposes.
