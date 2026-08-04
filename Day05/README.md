@@ -1,6 +1,11 @@
 # 🚗 Car Price Prediction Using Regression Models
 
-## 📖 Overview
+**Name:** Milan Sijo  
+**MUID:** milansijo@mulearn
+
+---
+
+## 📖 Project Overview
 
 This project was completed as part of the **Epochs: Data Science Bootcamp '26 - Day 05 Assignment**.
 
@@ -89,7 +94,7 @@ Categorical variables were converted into numerical representations before model
 
 ---
 
-# 🛠️ Data Preparation
+## 🛠️ Data Preparation
 
 Before model development, the dataset was prepared for Machine Learning.
 
@@ -124,11 +129,11 @@ A fixed `random_state` was used to make the split reproducible.
 
 ---
 
-# ⚙️ Feature Engineering
+## ⚙️ Feature Engineering
 
 Two new features were engineered from the existing dataset.
 
-## 1. Kilometers Driven Per Year — `km_per_year`
+### 1. Kilometers Driven Per Year — `km_per_year`
 
 A new feature called `km_per_year` was created by dividing the total kilometers driven by the age of the vehicle.
 
@@ -153,7 +158,7 @@ For example, two vehicles may both have travelled the same total distance, but t
 
 ---
 
-## 2. Automatic Transmission Indicator — `is_automatic`
+### 2. Automatic Transmission Indicator — `is_automatic`
 
 A binary feature called `is_automatic` was created from the existing `transmission_type` column.
 
@@ -177,21 +182,21 @@ This converts the transmission information into a simple numerical indicator tha
 
 ---
 
-# 🤖 Regression Models Implemented
+## 🤖 Regression Models Implemented
 
 Three regression models were developed and evaluated.
 
-## 1. Linear Regression
+### 1. Linear Regression
 
 Linear Regression was used as a baseline model for predicting used-car selling prices.
 
-### Strengths
+#### Strengths
 
 - Simple and computationally efficient
 - Easy to understand
 - Provides a useful baseline
 
-### Limitations
+#### Limitations
 
 - Assumes largely linear relationships
 - May struggle with complex interactions between vehicle characteristics
@@ -199,17 +204,17 @@ Linear Regression was used as a baseline model for predicting used-car selling p
 
 ---
 
-## 2. Decision Tree Regressor
+### 2. Decision Tree Regressor
 
 Decision Tree Regression predicts selling prices by recursively splitting observations based on their feature values.
 
-### Strengths
+#### Strengths
 
 - Captures nonlinear relationships
 - Handles complex feature interactions
 - Does not require linear relationships between features and the target
 
-### Limitations
+#### Limitations
 
 - Can overfit training data
 - Can have high variance
@@ -217,18 +222,18 @@ Decision Tree Regression predicts selling prices by recursively splitting observ
 
 ---
 
-## 3. Random Forest Regressor
+### 3. Random Forest Regressor
 
 Random Forest combines predictions from multiple Decision Trees to produce a more robust regression model.
 
-### Strengths
+#### Strengths
 
 - Handles nonlinear relationships effectively
 - Captures complex interactions between features
 - Reduces the variance associated with a single Decision Tree
 - Performs well on many tabular datasets
 
-### Limitations
+#### Limitations
 
 - More computationally expensive
 - Less interpretable than simpler models
@@ -236,7 +241,7 @@ Random Forest combines predictions from multiple Decision Trees to produce a mor
 
 ---
 
-# 📊 Model Evaluation
+## 📊 Model Evaluation
 
 The three models were evaluated using four regression metrics:
 
@@ -276,7 +281,7 @@ Measures how much of the variation in selling prices is explained by the model.
 
 ---
 
-# 🏆 Best-Performing Model
+## 🏆 Best-Performing Model
 
 The **Random Forest Regressor** achieved the best overall performance.
 
@@ -300,7 +305,7 @@ The R² score of approximately **0.9375** indicates that the model explains appr
 
 ---
 
-## Why Random Forest Performed Better
+### Why Random Forest Performed Better
 
 Used-car prices depend on complex relationships among factors such as:
 
@@ -325,7 +330,7 @@ Therefore, **Random Forest Regressor was selected as the best-performing model**
 
 ---
 
-# 🔍 Key Observations
+## 🔍 Key Observations
 
 1. **Random Forest achieved the strongest overall performance**, with an R² score of approximately 0.9375.
 
@@ -341,11 +346,11 @@ Therefore, **Random Forest Regressor was selected as the best-performing model**
 
 ---
 
-# 🚀 Future Improvements
+## 🔮 Future Improvements
 
 Although the Random Forest model achieved strong performance, several improvements could be explored.
 
-## 1. Hyperparameter Tuning
+### 1. Hyperparameter Tuning
 
 Random Forest parameters could be optimized using:
 
@@ -354,11 +359,11 @@ Random Forest parameters could be optimized using:
 
 Parameters such as `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`, and `max_features` could be tuned.
 
-## 2. Cross-Validation
+### 2. Cross-Validation
 
 K-Fold Cross-Validation could be used to evaluate model performance across multiple train-validation splits and provide a more reliable estimate of generalization performance.
 
-## 3. Additional Regression Algorithms
+### 3. Additional Regression Algorithms
 
 Other regression algorithms could be compared, such as:
 
@@ -367,17 +372,19 @@ Other regression algorithms could be compared, such as:
 - LightGBM
 - CatBoost
 
-## 4. Additional Feature Engineering
+### 4. Additional Feature Engineering
 
 Future experiments could investigate additional features derived from vehicle specifications and usage characteristics.
 
-## 5. Outlier Analysis
+### 5. Outlier Analysis
 
 Extreme selling prices and unusual vehicle characteristics could be investigated to determine their effect on prediction errors.
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Tech Stack
+
+### Libraries
 
 - Python
 - Pandas
@@ -385,7 +392,7 @@ Extreme selling prices and unusual vehicle characteristics could be investigated
 - Scikit-learn
 - Google Colab
 
-Machine Learning techniques used include:
+### Machine Learning Techniques
 
 - Data preprocessing
 - Feature engineering
@@ -399,10 +406,10 @@ Machine Learning techniques used include:
 
 ---
 
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```text
-Day5/
+Day05/
 ├── car_price_prediction.ipynb
 └── README.md
 ```
@@ -411,35 +418,56 @@ The notebook contains the complete workflow from data preparation through model 
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Installation
 
-1. Clone the repository:
+Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
 ```
 
-2. Install the required libraries:
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day05
+```
+
+Install the required libraries:
 
 ```bash
 pip install pandas numpy scikit-learn
 ```
 
-3. Open `car_price_prediction.ipynb` in Google Colab or Jupyter Notebook.
+---
 
-4. Run the notebook cells in order to reproduce the preprocessing, feature engineering, model training, and evaluation.
+## ▶️ Run Locally
+
+1. Open `car_price_prediction.ipynb` in Google Colab or Jupyter Notebook.
+
+2. Run the notebook cells in order to reproduce the preprocessing, feature engineering, model training, and evaluation.
 
 ---
 
-## 📌 Assignment
+## 🎯 Learning Outcomes
 
-**Epochs: Data Science Bootcamp '26 - Day 05**
+This project demonstrates:
 
-**Muid:milansijo@mulearn**
+- Supervised Machine Learning (Regression)
+- Data Preprocessing and Feature Engineering
+- Model Training and Evaluation
+- Model Comparison and Selection
+- Regression Metrics Analysis
 
-**Submission Tag:**
+---
 
-```text
-#evn-ds-epochs26-day05
-```
+## 👨‍💻 Author
+
+**Milan Sijo**
+
+**MUID:** milansijo@mulearn
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 05 Assignment** for educational purposes.
