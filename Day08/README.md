@@ -1,9 +1,11 @@
-# Customer Churn Prediction – Model Optimization
+# 🔧 Customer Churn Prediction – Model Optimization
 
 **Name:** Milan Sijo  
 **MUID:** milansijo@mulearn
 
-## Project Summary
+---
+
+## 📖 Project Overview
 
 This project focuses on optimizing a Machine Learning model for **Customer Churn Prediction**.
 
@@ -15,7 +17,7 @@ Feature importance from the optimized Random Forest was also analyzed to identif
 
 ---
 
-## Dataset
+## 📂 Dataset
 
 **Dataset:** Customer Churn Dataset  
 **Source:** Kaggle
@@ -46,7 +48,7 @@ The dataset contains features including:
 
 ---
 
-## Baseline Model
+## 📊 Baseline Model
 
 A **Random Forest Classifier** was used as the baseline classification model.
 
@@ -65,7 +67,7 @@ However, the relatively low Precision indicates that many non-churning customers
 
 ---
 
-## Optimization Approach
+## ⚙️ Optimization Approach
 
 The Random Forest model was optimized using **RandomizedSearchCV**.
 
@@ -95,7 +97,7 @@ These parameters were used for the optimized Random Forest model.
 
 ---
 
-## Model Performance Comparison
+## 📈 Model Performance Comparison
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |---|---:|---:|---:|---:|
@@ -112,7 +114,7 @@ The high Recall indicates that both models successfully identify almost all chur
 
 ---
 
-## Feature Importance
+## 🔑 Feature Importance
 
 Feature importance from the optimized Random Forest was analyzed to understand which variables contributed most to the model's predictions.
 
@@ -149,7 +151,7 @@ Feature importance represents how useful a feature was to the Random Forest for 
 
 ---
 
-## Important Observations and Findings
+## 🔍 Important Observations and Findings
 
 - Both Random Forest models achieved approximately **99.86% Recall**.
 - The models were therefore able to identify almost all customers who actually churned.
@@ -162,7 +164,7 @@ Feature importance represents how useful a feature was to the Random Forest for 
 
 ---
 
-## Model Improvements
+## 🔮 Future Improvements
 
 RandomizedSearchCV successfully identified an alternative set of Random Forest hyperparameters, but these parameters did not improve performance on the test dataset.
 
@@ -178,7 +180,7 @@ Further improvements could include:
 
 ---
 
-## Business Recommendations
+## 💼 Business Recommendations
 
 The model results can be used to guide further customer retention analysis.
 
@@ -191,7 +193,7 @@ The model results can be used to guide further customer retention analysis.
 
 ---
 
-## Final Conclusion
+## 📌 Final Conclusion
 
 This project optimized a Random Forest model for Customer Churn Prediction using **RandomizedSearchCV**.
 
@@ -205,7 +207,9 @@ Although the model successfully identifies most churners, the large number of fa
 
 ---
 
-## Technologies Used
+## 🛠️ Tech Stack
+
+### Libraries
 
 - Python
 - Pandas
@@ -227,10 +231,10 @@ Although the model successfully identifies most churners, the large number of fa
 
 ---
 
-## Repository Structure
+## 📂 Project Structure
 
 ```text
-Day8/
+Day08/
 │
 ├── model_optimization.ipynb
 └── README.md
@@ -238,12 +242,56 @@ Day8/
 
 ---
 
-## Assignment Details
+## ⚙️ Installation
 
-**Epochs '26 – Assignment 8**  
-**Model Optimization – Customer Churn Prediction**
+Clone the repository:
 
-**Name:** Milan Sijo  
+```bash
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
+```
+
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day08
+```
+
+Install the required libraries:
+
+```bash
+pip install pandas numpy matplotlib scikit-learn
+```
+
+---
+
+## ▶️ Run Locally
+
+1. Open `model_optimization.ipynb` in Google Colab or Jupyter Notebook.
+
+2. Run all notebook cells to reproduce the baseline model, hyperparameter tuning, model comparison, and feature importance analysis.
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+- Model Optimization using RandomizedSearchCV
+- Hyperparameter Tuning
+- Feature Importance Analysis
+- Baseline vs Optimized Model Comparison
+- Business Interpretation of ML Results
+
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
 **MUID:** milansijo@mulearn
 
-**Submission Tag:** `#evn-ds-epochs26-day08`
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 08 Assignment** for educational purposes.
