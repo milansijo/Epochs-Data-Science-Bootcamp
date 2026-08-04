@@ -1,6 +1,11 @@
 # 🎵 Spotify Tracks Dataset – EDA & Data Visualization
 
-## 📖 Overview
+**Name:** Milan Sijo  
+**MUID:** milansijo@mulearn
+
+---
+
+## 📖 Project Overview
 
 This project was completed as part of the **Epochs: Data Science Bootcamp '26 - Day 04 Assignment**.
 
@@ -123,7 +128,9 @@ Six meaningful visualizations were created using four different chart types (His
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Tech Stack
+
+### Libraries
 
 - Python 3
 - Pandas
@@ -134,10 +141,10 @@ Six meaningful visualizations were created using four different chart types (His
 
 ---
 
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```text
-Day4/
+Day04/
 ├── Day4_Visualization.ipynb
 ├── Images/
 │   ├── viz_01.png
@@ -151,27 +158,56 @@ Day4/
 
 ---
 
-## 🚀 How to Run
+## ⚙️ Installation
 
-1. Clone the repository.
+Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
 ```
 
-2. Install the required Python libraries.
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day04
+```
+
+Install the required Python libraries:
 
 ```bash
 pip install pandas numpy matplotlib seaborn
 ```
 
-3. Open `Day4_Visualization.ipynb` using Kaggle, Google Colab, or Jupyter Notebook.
+---
 
-4. Run all notebook cells to reproduce the EDA and visualizations.
+## ▶️ Run Locally
+
+1. Open `Day4_Visualization.ipynb` using Kaggle, Google Colab, or Jupyter Notebook.
+
+2. Run all notebook cells to reproduce the EDA and visualizations.
 
 ---
 
-## 📌 Assignment
+## 🎯 Learning Outcomes
 
-**Epochs: Data Science Bootcamp '26 - Day 04**
+This project demonstrates:
+
+- Exploratory Data Analysis (EDA)
+- Data Visualization using Matplotlib and Seaborn
+- Data Storytelling and Insight Communication
+- Statistical Analysis of Audio Features
+- Cross-Genre Comparison and Analysis
+
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
+**MUID:** milansijo@mulearn
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 04 Assignment** for educational purposes.
