@@ -1,6 +1,11 @@
 # 📊 Northwind Database SQL Analysis & Business Insights
 
-## 📖 Overview
+**Name:** Milan Sijo  
+**MUID:** milansijo@mulearn
+
+---
+
+## 📖 Project Overview
 
 This project is submitted as part of the **Epochs: Data Science Bootcamp '26 - Day 02 Assignment**. The objective is to analyze the Northwind database using SQL to answer real-world business questions and perform exploratory data analysis using Pandas.
 
@@ -28,7 +33,7 @@ The following business questions were addressed using SQL:
 
 ---
 
-## 🛠 SQL Analysis
+## 🛠️ SQL Analysis
 
 The required SQL queries were written to answer each business question and stored in the **queries.sql** file.
 
@@ -60,19 +65,22 @@ The notebook includes:
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Tech Stack
 
-* SQL (SQLite)
-* Python 3
-* Pandas
-* SQLite3
-* Jupyter Notebook
+### Libraries
+
+- SQL (SQLite)
+- Python 3
+- Pandas
+- SQLite3
+- Jupyter Notebook
 
 ---
 
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```text
+Day02/
 ├── queries.sql
 ├── analysis.ipynb
 ├── README.md
@@ -81,24 +89,33 @@ The notebook includes:
 
 ---
 
-## 🚀 How to Run
+## ⚙️ Installation
 
-1. Clone this repository.
+Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
 ```
 
-2. Install the required libraries.
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day02
+```
+
+Install the required libraries:
 
 ```bash
 pip install pandas jupyter
 ```
 
-3. Download the Northwind SQLite database from the provided GitHub repository and place **northwind.db** in the project directory.
+---
 
-4. Open **analysis.ipynb** and execute all cells to run the SQL queries, import the results into Pandas, and perform the analysis.
+## ▶️ Run Locally
+
+1. Download the Northwind SQLite database from the provided GitHub repository and place **northwind.db** in the project directory.
+
+2. Open **analysis.ipynb** and execute all cells to run the SQL queries, import the results into Pandas, and perform the analysis.
 
 ---
 
@@ -108,6 +125,26 @@ Screenshots of the SQL query outputs are included in this repository to demonstr
 
 ---
 
-## 📌 Assignment
+## 🎯 Learning Outcomes
 
-**Epochs: Data Science Bootcamp '26' – Day 02** 
+This project demonstrates:
+
+- SQL Query Writing for Business Analysis
+- Database Exploration using SQLite
+- Exploratory Data Analysis using Pandas
+- Business Insight Extraction from Data
+- Data-Driven Decision Making
+
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
+**MUID:** milansijo@mulearn
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 02 Assignment** for educational purposes.
