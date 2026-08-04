@@ -49,7 +49,7 @@ StudyGenie AI is an AI-powered study assistant built using **Streamlit** and **G
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure 
 
 ```text
 Day10/
