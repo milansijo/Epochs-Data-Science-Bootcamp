@@ -1,6 +1,11 @@
 # 🚗 Used Car Price Prediction - EDA, Data Cleaning & Feature Engineering
 
-## 📖 Overview
+**Name:** Milan Sijo  
+**MUID:** milansijo@mulearn
+
+---
+
+## 📖 Project Overview
 
 This project was completed as part of the **Epochs: Data Science Bootcamp '26 - Day 03 Assignment**.
 
@@ -156,7 +161,9 @@ The cleaned dataset contains the original relevant attributes along with the fiv
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Tech Stack
+
+### Libraries
 
 - Python 3
 - Pandas
@@ -166,10 +173,10 @@ The cleaned dataset contains the original relevant attributes along with the fiv
 
 ---
 
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```text
-Day3/
+Day03/
 ├── task-3.ipynb
 ├── cleaned_used_cars.csv
 └── README.md
@@ -177,30 +184,58 @@ Day3/
 
 ---
 
-## 🚀 How to Run
+## ⚙️ Installation
 
-1. Clone the repository.
+Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
 ```
 
-2. Install the required Python libraries.
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day03
+```
+
+Install the required Python libraries:
 
 ```bash
 pip install pandas numpy matplotlib
 ```
 
-3. Open `task-3.ipynb` using Google Colab or Jupyter Notebook.
+---
 
-4. Run all notebook cells to reproduce the EDA, data cleaning, and feature engineering process.
+## ▶️ Run Locally
 
-5. The final processed dataset is exported as `cleaned_used_cars.csv`.
+1. Open `task-3.ipynb` using Google Colab or Jupyter Notebook.
+
+2. Run all notebook cells to reproduce the EDA, data cleaning, and feature engineering process.
+
+3. The final processed dataset is exported as `cleaned_used_cars.csv`.
 
 ---
 
-## 📌 Assignment
+## 🎯 Learning Outcomes
 
-**Epochs: Data Science Bootcamp '26 - Day 03**
+This project demonstrates:
 
+- Exploratory Data Analysis (EDA)
+- Data Cleaning and Preprocessing
+- Feature Engineering
+- Handling Missing Values and Outliers
+- Data Export for Machine Learning
+
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
+**MUID:** milansijo@mulearn
+
+---
+
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 03 Assignment** for educational purposes.
