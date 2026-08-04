@@ -1,8 +1,11 @@
 import os
-import shutil
 import gradio as gr
 
-from rag import create_vector_store, retrieve_context
+from rag import (
+    create_vector_store,
+    retrieve_context,
+    clear_vector_store
+)
 from utils import generate_answer
 
 # -----------------------------
@@ -17,7 +20,6 @@ chat_history = []
 # -----------------------------
 
 def upload_pdf(pdf):
-
     global chat_history
 
     chat_history = []
@@ -35,7 +37,6 @@ def upload_pdf(pdf):
 # -----------------------------
 
 def chat(question):
-
     global chat_history
 
     if question.strip() == "":
@@ -46,9 +47,7 @@ def chat(question):
     history_text = ""
 
     for q, a in chat_history:
-
         history_text += f"User: {q}\n"
-
         history_text += f"Assistant: {a}\n\n"
 
     answer = generate_answer(
@@ -57,9 +56,7 @@ def chat(question):
         history=history_text
     )
 
-    chat_history.append(
-        (question, answer)
-    )
+    chat_history.append((question, answer))
 
     return answer
 
@@ -73,15 +70,15 @@ def clear_chat():
 
     chat_history = []
 
-    if os.path.exists("chroma_db"):
-        shutil.rmtree("chroma_db", ignore_errors=True)
+    clear_vector_store()
 
     return (
-        None,                                   
-        "",                                     
-        "",                                     
-        "✅ Conversation cleared successfully!" 
+        None,                                   # Clear uploaded PDF
+        "",                                     # Clear question box
+        "",                                     # Clear answer box
+        "✅ Conversation cleared successfully!" # Status
     )
+
 
 # -----------------------------
 # Gradio UI
@@ -104,9 +101,7 @@ with gr.Blocks(title="StudyBuddy AI") as demo:
             label="Upload PDF"
         )
 
-        upload_button = gr.Button(
-            "Process PDF"
-        )
+        upload_button = gr.Button("Process PDF")
 
     upload_status = gr.Textbox(
         label="Status",
@@ -120,41 +115,37 @@ with gr.Blocks(title="StudyBuddy AI") as demo:
         placeholder="Ask anything from the uploaded PDF..."
     )
 
-    ask_button = gr.Button(
-        "Ask"
-    )
+    ask_button = gr.Button("Ask")
 
     answer = gr.Textbox(
         label="Answer",
         lines=12
     )
 
-    clear_button = gr.Button(
-        "Clear Conversation"
-    )
+    clear_button = gr.Button("Clear Conversation")
 
     upload_button.click(
-        upload_pdf,
+        fn=upload_pdf,
         inputs=pdf,
         outputs=upload_status
     )
 
     ask_button.click(
-        chat,
+        fn=chat,
         inputs=question,
         outputs=answer
     )
 
     clear_button.click(
-    fn=clear_chat,
-    inputs=[],
-    outputs=[
-        pdf,
-        question,
-        answer,
-        upload_status
-    ]
-)
+        fn=clear_chat,
+        inputs=[],
+        outputs=[
+            pdf,
+            question,
+            answer,
+            upload_status
+        ]
+    )
 
 
 demo.launch(
