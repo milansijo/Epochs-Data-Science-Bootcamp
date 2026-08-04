@@ -1,9 +1,11 @@
-# Customer Churn Prediction
+# 📉 Customer Churn Prediction
 
-**Participant Name:** Milan Sijo  
+**Name:** Milan Sijo  
 **MUID:** milansijo@mulearn
 
-## Business Objective
+---
+
+## 📖 Project Overview
 
 Customer churn occurs when a customer stops using a company's products or services. Predicting customer churn can help businesses identify customers who are at risk of leaving and take appropriate retention measures.
 
@@ -15,7 +17,7 @@ Since the target variable represents whether a customer churned or not, this is 
 
 ---
 
-## Dataset Overview
+## 📂 Dataset Overview
 
 **Dataset:** Customer Churn Dataset  
 **Source:** Kaggle
@@ -41,7 +43,7 @@ The dataset contains the following columns:
 
 ---
 
-## Features & Target Variable
+## 🎯 Features & Target Variable
 
 ### Target Variable
 
@@ -80,7 +82,7 @@ The categorical features are:
 
 ---
 
-## Preprocessing Pipeline
+## 🛠️ Preprocessing Pipeline
 
 The dataset was prepared before training the classification models.
 
@@ -120,7 +122,7 @@ The dataset already contained separate training and testing files. Therefore, th
 
 ---
 
-## Models Implemented
+## 🤖 Models Implemented
 
 Three classification models were developed and compared.
 
@@ -144,7 +146,7 @@ Using multiple trees can reduce the variance associated with an individual Decis
 
 ---
 
-## Performance Comparison
+## 📊 Performance Comparison
 
 The models were evaluated using:
 
@@ -200,7 +202,7 @@ The obtained results were:
 
 ---
 
-## Best Model with Justification
+## 🏆 Best Model with Justification
 
 Among the three models evaluated, **Logistic Regression was selected as the best-performing model overall**.
 
@@ -223,7 +225,7 @@ However, the model also produced 27,320 false positives. Therefore, although it 
 
 ---
 
-## Key Observations
+## 🔍 Key Observations
 
 1. **All three models achieved extremely high Recall**, meaning that almost all actual churners were identified.
 
@@ -241,7 +243,7 @@ However, the model also produced 27,320 false positives. Therefore, although it 
 
 ---
 
-## Business Recommendations
+## 💼 Business Recommendations
 
 ### 1. Identify Potential Churners Early
 
@@ -286,7 +288,7 @@ Rather than treating every predicted churner equally, businesses can prioritize 
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 ### 1. Classification Threshold Tuning
 
@@ -328,10 +330,23 @@ Additional features derived from customer behavior, spending patterns, support i
 
 ---
 
-## Repository Structure
+## 🛠️ Tech Stack
+
+### Libraries
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Google Colab
+
+---
+
+## 📂 Project Structure
 
 ```text
-customer-churn-prediction/
+Day06/
 │
 ├── customer_churn_prediction.ipynb
 └── README.md
@@ -347,25 +362,56 @@ The notebook contains:
 
 ---
 
-## Technologies Used
+## ⚙️ Installation
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Google Colab
+Clone the repository:
+
+```bash
+git clone https://github.com/milansijo/Epochs-Data-Science-Bootcamp.git
+```
+
+Navigate to the project:
+
+```bash
+cd Epochs-Data-Science-Bootcamp/Day06
+```
+
+Install the required libraries:
+
+```bash
+pip install pandas numpy scikit-learn matplotlib
+```
 
 ---
 
-## Assignment Details
+## ▶️ Run Locally
 
-**Epochs '26 – Assignment 6**  
-**Topic:** Supervised Machine Learning – Classification
+1. Open `customer_churn_prediction.ipynb` in Google Colab or Jupyter Notebook.
 
-**Participant Name:** Milan Sijo  
+2. Run all notebook cells to reproduce the preprocessing, model training, evaluation, and comparison.
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+- Supervised Machine Learning (Classification)
+- Data Preprocessing and Encoding
+- Model Training and Evaluation
+- Confusion Matrix Analysis
+- Business Recommendations from ML Predictions
+
+---
+
+## 👨‍💻 Author
+
+**Milan Sijo**
+
 **MUID:** milansijo@mulearn
 
-### Submission Tag
+---
 
-`#evn-ds-epochs26-day06`
+## 📄 License
+
+This project was developed as part of the **Epochs Data Science Bootcamp – Day 06 Assignment** for educational purposes.
